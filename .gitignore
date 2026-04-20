@@ -1,6 +1,6 @@
 node_modules
 dist
 .env
-*.pdf
-# Optional: keep the placeholder but ignore real PDFs if preferred.
-# For this specific task, we might want to push everything.
+# Keep result.pdf as it is required for the application to function
+# *.pdf
+
