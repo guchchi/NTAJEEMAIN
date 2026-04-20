@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.goi-logo {
+    height: 60px;
+    width: auto;
+}
+
+.moe-text {
+    font-size: 13px;
+    line-height: 1.2;
+    color: #444;
+}
+
+.moe-text strong {
+    font-size: 14px;
+    color: #000;
+}
+
+.header-center {
+    flex: 2;
+    text-align: center;
+}
+
+.header-center h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.header-center h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nta-logo {
+    height: 50px;
+    width: auto;
+}
+
+.navbar-strap {
+    background-color: #002147;
+    height: 35px;
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #002147;
+    color: white;
+    padding: 12px 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    flex: 0 0 200px;
+    font-size: 15px;
+    color: #444;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #002147;
+}
+
+.case-note {
+    color: #1b8b54;
+    font-weight: 600;
+}
+
+.captcha-display-group {
+    margin-top: 10px;
+}
+
+.captcha-box-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha-code {
+    background-color: #000044;
+    color: white;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    min-width: 110px;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+}
+
+.refresh-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-actions {
+    margin-top: 35px;
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-login {
+    background-color: #1b8b54;
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #157347;
+}
+
+.forgot-link {
+    color: #002147;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* PDF Viewer Section */
+.hidden {
+    display: none !important;
+}
+
+#pdf-viewer-section {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.pdf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.btn-back {
+    background-color: #002147;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .form-group label {
+        flex: none;
+        text-align: left;
+        padding-right: 0;
+    }
+    
+    .form-group input {
+        width: 100%;
+    }
+    
+    .form-actions {
+        padding-left: 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
